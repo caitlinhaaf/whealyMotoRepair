@@ -1,0 +1,14 @@
+.header{
+  height: 100vh;
+  background-color: black;
+}
+
+.logo{
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+
+  transform: translateX(-50%)translateY(-50%);
+}

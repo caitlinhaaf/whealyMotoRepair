@@ -1,0 +1,11 @@
+@import "variables";
+
+/*
+GLOBAL STYLES
+*/
+*,
+body{
+  box-sizing: border-box;
+  font: $bodyFont;
+  color: $dkgrey;
+}
