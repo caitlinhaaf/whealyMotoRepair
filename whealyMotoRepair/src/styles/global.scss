@@ -7,5 +7,25 @@ GLOBAL STYLES
 body{
   box-sizing: border-box;
   font: $bodyFont;
-  color: $dkgrey;
+  color: $medgrey;
+  // color: purple;
+}
+
+// h1, h2, h3, h4, h5, h6{
+//   font-family: $hdrFamily
+// }
+
+h2{
+  font: $hdrFont;
+}
+
+.bodySection{
+  width: 100%;
+
+  display: flex;
+  align-items: stretch;
+
+  > .gatsby-image-wrapper{
+    width: 50%;
+  }
 }

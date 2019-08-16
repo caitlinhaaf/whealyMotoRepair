@@ -1,0 +1,120 @@
+.whitePortion{
+    stroke:#FFFFFF;
+    stroke-width:2;
+    stroke-miterlimit:10;
+    opacity: 0;
+
+    stroke-dasharray: 600;
+    animation: fullCircleOutline 5s linear;
+    animation-fill-mode: forwards;
+}
+
+.blackPortion{
+    // stroke:#000000;
+    stroke: #FFFFFF;
+    stroke-width:2;
+    stroke-miterlimit:10;
+    opacity: 0;
+
+    stroke-dasharray: 400;
+    // stroke-dashoffset: 400;
+
+    animation: blackCircleOutline 4s linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.redPortion{
+    stroke:#ED1C24;
+    stroke-width:2;
+    stroke-miterlimit:10;
+    opacity: 0;
+
+    stroke-dasharray: 400;
+    // stroke-dashoffset: 400;
+
+    animation: redCircleOutline 4s linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.whiteTxt{
+    fill:#FFFFFF;
+    opacity: 0;
+    animation: fadeIn 2s linear;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.blackTxt{
+    opacity: 0;
+    animation: fadeIn 2s linear;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes redCircleOutline {
+    0%{
+        stroke-dashoffset: 400;
+        opacity: 0
+    }
+    15%{
+        opacity: 1;
+    }
+
+    50%{
+        stroke-dashoffset: 0;
+        fill: rgba(237, 28, 36, 0);
+    }
+    100%{
+        fill: rgba(237, 28, 36, 1);
+        opacity: 1;
+    }
+  }
+
+@keyframes blackCircleOutline  {
+    0%{
+        stroke-dashoffset: 400;
+        opacity: 0;
+    }
+    15%{
+        opacity: 1;
+    }
+    50%{
+        stroke-dashoffset: 0;
+        stroke: #FFFFFF;
+    }
+    100%{
+        stroke: #000000;
+        opacity: 1;
+    }
+}
+
+@keyframes fullCircleOutline {
+    0%   {
+        stroke-dashoffset: 600;
+        // fill: rgba(255,255,255, 0);
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    40%  {
+        fill: rgba(255,255,255, 0);
+        stroke-dashoffset: 0;
+    }
+    100% {
+        fill: rgba(255,255,255, 1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

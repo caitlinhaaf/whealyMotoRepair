@@ -2,13 +2,16 @@
 import React from "react"
 import Logo from "../logo/logo"
 
+import LogoSVG from "../logoSVG/logoSVG"
+
 import componentStyles from "./herohdr.module.scss"
 
 // const Header = ({ siteTitle }) => (
 const Header = () => (
   <header className={componentStyles.header}>
     <div className={componentStyles.logo}>
-      <Logo/>
+      {/* <Logo/> */}
+      <LogoSVG />
     </div>
   </header>
 )
