@@ -11,6 +11,10 @@ body{
   // color: purple;
 }
 
+body{
+  background: black;
+}
+
 // h1, h2, h3, h4, h5, h6{
 //   font-family: $hdrFamily
 // }
@@ -19,13 +23,35 @@ h2{
   font: $hdrFont;
 }
 
+a{
+  cursor: pointer;
+}
+
+
+
+// move into component styles
 .bodySection{
   width: 100%;
 
   display: flex;
   align-items: stretch;
 
+  overflow: hidden;
+
   > .gatsby-image-wrapper{
-    width: 50%;
+    min-width: 50%;
   }
+
+  // > * {
+  //   min-width: 50%;
+  // }
+
+  &.fullWidth{
+    padding: 3rem;
+  }
+
+  &.light{
+    background: $ltgrey;
+  }
+
 }

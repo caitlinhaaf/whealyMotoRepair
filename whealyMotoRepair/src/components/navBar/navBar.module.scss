@@ -1,0 +1,25 @@
+@import "../../styles/_variables";
+
+.navBar{
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    z-index: 2;
+    background-color: black;
+
+    display: flex;
+    justify-content: flex-end;
+
+    box-shadow: $bottomShadow;
+
+    > * {
+        margin: 0 1rem;
+        display: block;
+    }
+
+    *{
+        color: $orange;
+        // font-weight: bold;
+        text-decoration: none;
+    }
+}
