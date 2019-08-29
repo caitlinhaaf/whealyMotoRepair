@@ -8,16 +8,14 @@ body{
   box-sizing: border-box;
   font: $bodyFont;
   color: $medgrey;
-  // color: purple;
+
+  transition: all .3s linear;
 }
 
 body{
   background: black;
 }
 
-// h1, h2, h3, h4, h5, h6{
-//   font-family: $hdrFamily
-// }
 
 h2{
   font: $hdrFont;
@@ -54,4 +52,9 @@ a{
     background: $ltgrey;
   }
 
+}
+
+.skillsSection{
+  display: flex;
+  // flex-wrap: wrap;
 }

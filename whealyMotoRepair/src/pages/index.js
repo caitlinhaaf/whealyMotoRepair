@@ -33,22 +33,25 @@ const IndexPage = () => (
       <div>
         <h2>Services</h2>
 
-        <SkillDescript title="Maintenance">
-          <p>From oil changes to engine rebuilds, and anything in between. We've got you covered.</p>
-        </SkillDescript>
+        <div className="skillsSection">
+          <SkillDescript title="Maintenance">
+            <p>From oil changes to engine rebuilds, and anything in between. We've got you covered.</p>
+          </SkillDescript>
 
-        <SkillDescript title="Purchase Inspections">
-          <p>Looking at buying your first bike, and not sure what you're looking for? Let us help you determine if the bike you're looking at is right for you.</p>
-        </SkillDescript>
+          <SkillDescript title="Purchase Inspections">
+            <p>Looking at buying your first bike, and not sure what you're looking for? Let us help you determine if the bike you're looking at is right for you.</p>
+          </SkillDescript>
 
-        <SkillDescript title="Consulting">
-          <p>Are you hoping to rebuild your own bike, but aren't sure where to start? Run into an issue with your project you can't troubleshoot yourself?</p>
-        </SkillDescript>
+          <SkillDescript title="Consulting">
+            <p>Are you hoping to rebuild your own bike, but aren't sure where to start? Run into an issue with your project you can't troubleshoot yourself?</p>
+          </SkillDescript>
 
-        <SkillDescript title="Parts Purchasing">
-          <p>We are Toronto's only provider of SIP parts. Contact us to place an order.</p>
-        </SkillDescript>
+          <SkillDescript title="Parts Purchasing">
+            <p>We are Toronto's only provider of SIP parts. Contact us to place an order.</p>
+          </SkillDescript>
+        </div>
 
+        
       </div>
         
     </section>
