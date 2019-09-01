@@ -17,11 +17,11 @@ const IndexPage = () => (
 
     <HeroHdr/>
 
-    <section className="bodySection">
+    <section id="about" className="bodySection">
       <AlanImg />
 
       <GeometricSection>
-        <h2>About Us</h2>
+        <h2>ABOUT</h2>
         <p>
           Muffin biscuit sugar plum. Sweet sesame snaps jujubes carrot cake sweet roll. Halvah candy cake apple pie croissant wafer chocolate ice cream. Donut macaroon pudding dragée cookie marshmallow. Donut dragée muffin tootsie roll marzipan gingerbread. Marshmallow apple pie toffee chocolate bar tart brownie liquorice.
         </p>
@@ -29,9 +29,9 @@ const IndexPage = () => (
     </section>
 
 
-    <section className="bodySection fullWidth">
+    <section id="services" className="bodySection fullWidth">
       <div>
-        <h2>Services</h2>
+        <h2>SERVICES</h2>
 
         <div className="skillsSection">
           <SkillDescript title="Maintenance">
@@ -56,8 +56,8 @@ const IndexPage = () => (
         
     </section>
 
-    <section className="bodySection fullWidth light">
-      <h2>Contact Us</h2>
+    <section id="contact" className="bodySection fullWidth light">
+      <h2>CONTACT</h2>
     </section>
 
 

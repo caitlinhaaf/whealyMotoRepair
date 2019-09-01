@@ -2,7 +2,7 @@
 .blackPortion,
 .redPortion{
     opacity: 0;
-    stroke-width:2;
+    stroke-width:1;
     stroke-miterlimit:10;
 }
 
@@ -31,31 +31,25 @@
     animation-fill-mode: forwards;
 }
 
-.whiteTxt{
-    // fill:#FFFFFF;
+.whiteTxt,
+.blackTxt{
     opacity: 0;
-
     stroke: white;
-    stroke-width:1;
+    stroke-width:.5;
     stroke-miterlimit:10;
+}
 
+.whiteTxt{
     stroke-dasharray: 350;
-
-    // animation: fadeIn 2s linear;
-    // animation-delay: 3s;
-
-    
     animation: whiteTextOutline 4s linear;
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
 .blackTxt{
-    opacity: 0;
-
-    animation: fadeIn 2s linear;
-    animation-delay: 3s;
-
+    stroke-dasharray: 200;
+    animation: blackTextOutline 4s linear;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -134,7 +128,7 @@
     10%{
         opacity: 1;
     }
-    80%{
+    65%{
         stroke-dashoffset: 0;
         stroke-width:1;
         fill: rgba(255,255,255, 0);
@@ -144,6 +138,28 @@
         stroke-width:0;
         opacity: 1;
         fill: rgba(255,255,255, 1);
+    }
+}
+
+@keyframes blackTextOutline {
+    0%{
+        stroke-dashoffset: 200;
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    65%{
+        stroke-dashoffset: 0;
+        stroke-width:1;
+        fill: rgba(0,0,0, 0);
+        stroke: white;
+    }
+    100%{
+        stroke-width:0;
+        opacity: 1;
+        stroke: black;
+        fill: rgba(0,0,0, 1);
     }
 }
 

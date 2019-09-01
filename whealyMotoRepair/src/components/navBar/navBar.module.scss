@@ -3,8 +3,6 @@
 .navBar{
     position: fixed;
     width: 100%;
-    // padding: 1rem;
-    // padding: .5rem;
     z-index: 2;
     background-color: black;
 
@@ -25,13 +23,18 @@
     display: flex;
     justify-content: flex-end;
 
+    * {
+        font-size: .8em;
+    }
+
     > * {
         margin: 0 1rem;
         display: block;
     }
 
     a{
-        padding: 1rem .5rem;
+        // padding: 1rem .5rem;
+        padding: 1.25rem .5rem;
         border-bottom: 2px solid black;
     }
 
@@ -47,11 +50,18 @@
 }
 
 .logo{
+    opacity: 0;
     width: 5.5rem;
     display: block;
     padding: .5rem 1.5rem;
+    margin-top: -2rem;
     > *{
         display: block; 
         width: 100%;
     }
+}
+
+.visible{
+    opacity: 1;
+    margin-top: 0;
 }
