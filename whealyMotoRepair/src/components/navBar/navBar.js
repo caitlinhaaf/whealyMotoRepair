@@ -18,9 +18,8 @@ class NavBar extends React.Component {
 
     handleScroll = () => {
         const scrollPos = window.scrollY;
-        const windowHeight = window.innerHeight;
+        const windowHeight = window.innerHeight - 50;
 
-        // console.log("SCROLLING: ", scrollPos)
         if(scrollPos > windowHeight) this.setState({logoVisible: true})
         else this.setState({logoVisible: false})
     }

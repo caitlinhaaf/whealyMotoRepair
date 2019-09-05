@@ -7,6 +7,9 @@ import AlanImg from "../components/imageComponents/alan"
 import SkillDescript from "../components/skillDescript/skillDescript"
 import NavBar from "../components/navBar/navBar"
 
+import OilCan from '../components/icons/oilCan/oilCan'
+import MagnifyingGlass from '../components/icons/magnifyingGlass/magnifyingGlass'
+
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -35,10 +38,12 @@ const IndexPage = () => (
 
         <div className="skillsSection">
           <SkillDescript title="Maintenance">
+            <OilCan />
             <p>From oil changes to engine rebuilds, and anything in between. We've got you covered.</p>
           </SkillDescript>
 
           <SkillDescript title="Purchase Inspections">
+            <MagnifyingGlass />
             <p>Looking at buying your first bike, and not sure what you're looking for? Let us help you determine if the bike you're looking at is right for you.</p>
           </SkillDescript>
 

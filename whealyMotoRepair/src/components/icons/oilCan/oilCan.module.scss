@@ -1,0 +1,16 @@
+.spray,
+.highlight{
+    fill: none;
+}
+
+.spray{
+    stroke:white;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:10px;
+    stroke-dasharray:1 15;
+}
+
+.whiteFill{
+    fill: white;
+}
