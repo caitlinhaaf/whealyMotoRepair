@@ -14,15 +14,15 @@ const MagnifyingGlass = () => (
         </g>
 
         <g id="eye">
-            <path className={componentStyles.whiteOutline} d="M376.3,146c-45.5,0-82.3,36.9-82.3,82.3c0,45.5,36.9,82.3,82.3,82.3s82.3-36.9,82.3-82.3
+            <path className={componentStyles.iris} d="M376.3,146c-45.5,0-82.3,36.9-82.3,82.3c0,45.5,36.9,82.3,82.3,82.3s82.3-36.9,82.3-82.3
                 C458.7,182.8,421.8,146,376.3,146z M376.3,269c-22.5,0-40.7-18.2-40.7-40.7c0-22.5,18.2-40.7,40.7-40.7s40.7,18.2,40.7,40.7
                 C417,250.8,398.8,269,376.3,269z"/>
-            <circle cx="376.3" cy="228.3" r="40.7"/>
+            <circle className={componentStyles.pupil} cx="376.3" cy="228.3" r="40.7"/>
         </g>
 
-        <g id="blinkLine">
+        {/* <g id="blinkLine">
             <line className={componentStyles.whiteOutline} x1="273.2" y1="228.3" x2="488.3" y2="228.3"/>
-        </g>
+        </g> */}
 
     </svg>
 

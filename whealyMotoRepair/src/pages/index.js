@@ -9,6 +9,8 @@ import NavBar from "../components/navBar/navBar"
 
 import OilCan from '../components/icons/oilCan/oilCan'
 import MagnifyingGlass from '../components/icons/magnifyingGlass/magnifyingGlass'
+import SpeechBubbles from '../components/icons/speechBubbles/speechBubbles'
+import SparkPlug from '../components/icons/sparkPlug/sparkPlug'
 
 import SEO from "../components/seo"
 
@@ -48,10 +50,12 @@ const IndexPage = () => (
           </SkillDescript>
 
           <SkillDescript title="Consulting">
+            <SpeechBubbles />
             <p>Are you hoping to rebuild your own bike, but aren't sure where to start? Run into an issue with your project you can't troubleshoot yourself?</p>
           </SkillDescript>
 
           <SkillDescript title="Parts Purchasing">
+            <SparkPlug />
             <p>We are Toronto's only provider of SIP parts. Contact us to place an order.</p>
           </SkillDescript>
         </div>
@@ -61,13 +65,13 @@ const IndexPage = () => (
         
     </section>
 
-    <section id="contact" className="bodySection fullWidth light">
+    <section id="contact" className="bodySection fullWidth">
       <h2>CONTACT</h2>
     </section>
 
 
     <footer>
-      All content copyrighted Whealy Motorcycle Repair 2019.
+      All content copyrighted Whealy Motorcycle Repair {new Date().getFullYear()}.
     </footer>
 
 

@@ -1,0 +1,49 @@
+.solid{
+    // fill:black;
+    stroke:white;
+    stroke-width:10;
+    stroke-miterlimit:10;
+}
+
+.outline{
+    fill:none;
+    stroke:white;
+    stroke-width:10;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+}
+
+.electricity{
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+
+    -webkit-animation-timing-function: ease-out;
+    animation: zap 3.5s infinite;
+}
+
+@keyframes zap{
+    0%{
+        opacity: 0; 
+        stroke-dashoffset: 100;
+    }
+    5%{
+        opacity: 1;
+    }
+    15%{
+        stroke-dashoffset: 200;
+    }
+    30%{
+        stroke-dashoffset: 300; 
+    }
+    45%{
+        stroke-dashoffset: 400;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        stroke-dashoffset: 400;
+    }
+}

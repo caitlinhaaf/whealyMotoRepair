@@ -4,6 +4,7 @@
     opacity: 0;
     stroke-width:1;
     stroke-miterlimit:10;
+    stroke-linecap:round;
 }
 
 .whitePortion{
@@ -20,7 +21,8 @@
 }
 
 .redPortion{
-    stroke:#ED1C24;
+    // stroke:#ED1C24;
+    stroke: white;
     animation: redCircleOutline 3s linear;
 }
 
@@ -65,7 +67,6 @@
 
     50%{
         stroke-dashoffset: 0;
-        // fill: rgba(237, 28, 36, 0);
     }
     80%{
         fill: rgba(237, 28, 36, 0);
