@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Whealy Motorcycle Repair`,
-    description: `Motorcycle technician located in Toronto specializing in vintage.`,
+    description: `Motorcycle technician located in Toronto specializing in vintage, scooters.`,
+    keywords: `motorcycle, scooter, vespa, repair, rebuild, restoration, toronto`,
     author: `@caitlinhaaf`,
   },
   plugins: [

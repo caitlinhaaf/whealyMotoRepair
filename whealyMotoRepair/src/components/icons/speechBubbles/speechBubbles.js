@@ -11,22 +11,22 @@ const SpeechBubbles = () => (
             <path className={componentStyles.speechBubbles} d="M30.7,410.1c0-69.6,78.8-126,176-126s176,56.4,176,126s-78.8,126-176,126c-14.6,0-28.7-1.3-42.3-3.7
                 c0,0-15.2,39.5-88.2,39.5c36.5-30,26.8-60,26.8-60l0,0C59.3,489.1,30.7,452,30.7,410.1z"/>
         </g>
-        <g id="dot1" className={componentStyles.dot}>
+        <g id="dot1" className={`${componentStyles.dot} ${componentStyles.dot1}`}>
             <circle cx="139.3" cy="411.3" r="23.5"/>
         </g>
-        <g id="dot2" className={componentStyles.dot}>
+        <g id="dot2" className={`${componentStyles.dot} ${componentStyles.dot2}`}>
             <circle cx="205.4" cy="411.3" r="23.5"/>
         </g>
-        <g id="dot3" className={componentStyles.dot}>
+        <g id="dot3" className={`${componentStyles.dot} ${componentStyles.dot3}`}>
             <circle cx="271.5" cy="411.3" r="23.5"/>
         </g>
-        <g id="dot4" className={componentStyles.dot}>
+        <g id="dot4" className={`${componentStyles.dot} ${componentStyles.dot4}`}>
             <circle cx="324.7" cy="157" r="23.5"/>
         </g>
-        <g id="dot5" className={componentStyles.dot}>
+        <g id="dot5" className={`${componentStyles.dot} ${componentStyles.dot5}`}>
             <circle cx="390.8" cy="157" r="23.5"/>
         </g>
-        <g id="dot6" className={componentStyles.dot}>
+        <g id="dot6" className={`${componentStyles.dot} ${componentStyles.dot6}`}>
             <circle cx="456.9" cy="157" r="23.5"/>
         </g>
     </svg>

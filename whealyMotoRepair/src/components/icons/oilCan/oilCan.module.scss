@@ -7,7 +7,9 @@
     stroke-linecap:round;
     stroke-linejoin:round;
     stroke-width:10px;
-    stroke-dasharray:1 15;
+
+    stroke-dasharray: 0 100 1 15 1 15 1 15 1 15 1 15 0 100;
+    stroke-dashoffset: 181;
 
     -webkit-animation-timing-function: ease-out;
     animation: spray 5s infinite;
@@ -27,31 +29,29 @@
 
 @keyframes spray{
     0%{
-        stroke-dashoffset: 40;
-        stroke-dasharray: 1 15;
+        stroke-dashoffset: 181;
+        // stroke-dasharray: 1 15;
         // stroke-dasharray: 1 15 1 80;
         // stroke-dashoffset: 200;
-        opacity: 0;
-    }
-    10%{
-        stroke-dashoffset: 40;
-        stroke-dasharray: 1 15;
-        // stroke-dasharray: 1 15 1 80;
-        opacity: 0;
+
         opacity: 0;
     }
     25%{
         opacity: 1;
-        stroke-dashoffset: 0;
-        stroke-dasharray: 1 15;
+    }
+    50%{
+        stroke-dashoffset: 5;
     }
     60%{
+        
         opacity: 1;
     }
     80%{
+        // stroke-dashoffset: 5;
         opacity: 0;
     }
     100%{
+        stroke-dashoffset: 5;
         opacity: 0;
     }
 }
@@ -64,8 +64,11 @@
     40%{
         transform: translateY(9%) translateX(-6.25%) rotate(-12deg);
     }
-    70%{
+    60%{
         transform: translateY(9%) translateX(-6.25%) rotate(-12deg);
+    }
+    80%{
+        transform: translateY(0%) translateX(0%) rotate(0deg); 
     }
     100%{
         transform: translateY(0%) translateX(0%) rotate(0deg); 

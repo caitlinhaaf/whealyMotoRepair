@@ -13,10 +13,28 @@ $bottomShadowHover: 0px 4px 4px 4px rgba(0,0,0,.25);
 /*
 FONTS
 */
-@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:300|Source+Sans+Pro:400,700");
+// FreightSans Pro Book
+// font-family: freight-sans-pro, sans-serif;
+// font-weight: 400;
+// font-style: normal;
 
-$hdrFont: normal 700 2rem/1.2em 'Montserrat', sans-serif;
-$bodyFont: normal 400 1rem/1.2em 'Manjari', sans-serif;
+// FreightSansCmpPro Bold
+// font-family: freight-sans-compressed-pro, sans-serif;
+// font-weight: 700;
+// font-style: normal;
+
+// FreightSansHCndPro XLight
+// font-family: freight-sans-condensed-pro-l, sans-serif;
+// font-weight: 300;
+// font-style: normal;
+
+// @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:300|Source+Sans+Pro:400,700");
+// $hdrFont: normal 700 2rem/1.2em 'Montserrat', sans-serif;
+// $bodyFont: normal 400 1rem/1.2em 'Manjari', sans-serif;
+
+@import url("https://use.typekit.net/lmw8wuk.css");
+$hdrFont: normal 300 2rem/1.2em freight-sans-condensed-pro-l, sans-serif;
+$bodyFont: normal 400 1rem/1.2em freight-sans-pro, sans-serif;
 
 /*
 BREAKPOINTS
