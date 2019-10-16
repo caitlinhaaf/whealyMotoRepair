@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Whealy Motorcycle Repair`,
     description: `Motorcycle technician located in Toronto specializing in vintage, scooters.`,
-    keywords: `motorcycle, scooter, vespa, repair, rebuild, restoration, toronto`,
+    keywords: `alan whealy, motorcycle, scooter, vespa, repair, rebuild, restoration, toronto, vintage`,
     author: `@caitlinhaaf`,
   },
   plugins: [
@@ -20,11 +20,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `whealy-moto-repair`,
+        short_name: `whealy`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#000000`,
+        theme_color: `#ed1c24`,
         display: `minimal-ui`,
         icon: `src/images/whealy-logo.png`, // This path is relative to the root of the site.
       },
