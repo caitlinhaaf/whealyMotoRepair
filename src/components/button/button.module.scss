@@ -1,0 +1,39 @@
+@import "../../styles/_variables";
+
+.default{
+    padding: 1rem 2rem;
+    display: flex;
+    // justify-content: space-around;
+    justify-content: center;
+    align-items: stretch;
+    text-decoration: none;
+
+    margin: 1rem auto;
+    border: none;
+    min-width: 250px;
+    cursor: pointer;
+
+    > *{
+        display: block;
+    }
+    svg{
+        min-width: 1.25rem;
+        margin-right: .5rem;
+    }
+    *{
+        text-decoration: none;
+    }
+}
+
+.solid{
+    background-color: $orange;
+}
+
+.outline{
+    background-color: transparent;
+    border: 3px solid $orange;
+    *{
+        color: $orange;
+    }
+}
+

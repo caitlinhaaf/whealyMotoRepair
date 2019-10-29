@@ -1,0 +1,23 @@
+@import "../../styles/_variables";
+
+.columnContainer{
+    position: relative;
+    padding: 15vw 4rem 4rem 4rem;
+}
+
+.overlapHeader{
+    position: absolute;
+    top: 1rem;
+    
+    color: $orange;
+    font-size: 8vw;
+    border-bottom: 1px solid $orange;
+    z-index: 2;
+
+    &.left{
+        left: -5.5vw;
+    }
+    &.right{
+        right: -5.5vw;
+    }
+}

@@ -16,7 +16,7 @@ import Img from "gatsby-image"
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      alanImage: file(relativePath: { eq: "alanPlaceholder.png" }) {
+      alanImage: file(relativePath: { eq: "gtr-topView.png" }) {
         childImageSharp {
           fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
@@ -26,7 +26,7 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.alanImage.childImageSharp.fluid} alt="Image of Alan wearing a baseball cap and black shirt speaking animatedly in front of a white board."/>
+  return <Img fluid={data.alanImage.childImageSharp.fluid} alt="Control head of an orange 1971 Vespa Gran Turismo viewed from above."/>
 }
 
 export default Image
