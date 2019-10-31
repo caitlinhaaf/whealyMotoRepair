@@ -1,0 +1,22 @@
+.rowContainer{
+    position: relative;
+    // padding: 15vw 4rem 4rem 4rem;
+    padding-top: 13vw;
+    margin-top: 8vw;
+}
+
+.overlapHeader{
+    font-size: 8vw;
+    border-bottom: 1px solid white;
+
+    position: absolute;
+    z-index: 2;
+    top: -4vw;
+
+    &.left{
+        left: 3rem;
+    }
+    &.right{
+        right: 3rem;
+    }
+}

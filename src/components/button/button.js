@@ -2,7 +2,7 @@ import React from "react"
 
 import componentStyles from "./button.module.scss"
 
-const SkillDescript = ({btnStyle, ...props}) => {
+const Button = ({btnStyle, link, clickEvt, ...props}) => {
     const buttonClass = (btnStyle==="outline") ? componentStyles.outline : componentStyles.solid;
 
     return(
@@ -12,4 +12,4 @@ const SkillDescript = ({btnStyle, ...props}) => {
     )
 }
 
-export default SkillDescript
+export default Button

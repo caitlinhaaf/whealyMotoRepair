@@ -1,9 +1,9 @@
 @import "../../styles/_variables";
 
 .default{
+    position: relative;
     padding: 1rem 2rem;
     display: flex;
-    // justify-content: space-around;
     justify-content: center;
     align-items: stretch;
     text-decoration: none;
@@ -27,13 +27,40 @@
 
 .solid{
     background-color: $orange;
+    &:hover, &:focus{
+        background-color: darken($orange, 15%)
+    }
+
 }
 
 .outline{
     background-color: transparent;
     border: 3px solid $orange;
+    z-index: 2;
     *{
         color: $orange;
+        z-index: 2;
     }
+    &::after{
+        content: '';
+        background-color: $orange;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1;
+        width: 0;
+        transition: width .5s;
+    }
+
+    &:hover, &:focus{
+        *{
+            color: white;
+        }
+        &::after{
+            width: 100%;
+        }
+    }
+
 }
 

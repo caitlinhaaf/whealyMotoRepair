@@ -8,7 +8,6 @@ GLOBAL STYLES
 body{
   box-sizing: border-box;
   font: $bodyFont;
-  // color: $medgrey;
   color: white;
 
   transition: all .3s linear;
@@ -36,18 +35,20 @@ footer{
 
 table{
   border-collapse: collapse;
+  margin-top: 1rem;
 }
 
 td{
   padding: .5rem 1rem;
   min-width: 200px;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  border-bottom: 1px solid $orange;
+  border-top: 1px solid $orange;
 }
 
 
 // move into component styles
 .bodySection{
+  position: relative;
   width: 100%;
 
   display: flex;
@@ -56,25 +57,6 @@ td{
 
   @include md {
     flex-wrap: wrap;
-  }
-
-  overflow: hidden;
-
-  // > .gatsby-image-wrapper{
-  //   min-width: 50%;
-  //   @include md {
-  //     min-width: 100%;
-  //     max-height: 500px;
-  //   }
-  // }
-  &.twoCol{
-    > *{
-      width: 50%;
-    }
-    @include md {
-      min-width: 100%;
-      max-height: 500px;
-    }
   }
 
   &.fullWidth{
@@ -91,8 +73,74 @@ td{
 
 }
 
+.bodyColumn{
+  padding: 3rem;
+}
 
-.skillsSection{
+.twoCol{
   display: flex;
-  // flex-wrap: wrap;
+  > *{
+    width: 50%;
+  }
+  @include md {
+    > *{
+      width: 100%;
+      margin-right: 0;
+      margin-top: 1rem;
+      &:nth-child(1){
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.fourCol{
+  display: flex;
+  flex-wrap: wrap;
+
+  > *{
+    width: 25%;
+  }
+
+  &.spacing{
+    > *{
+      margin-right: 1rem;
+      width: calc(25% - .75rem)
+    }
+    >:last-child{
+      margin-right: 0;
+    }
+    
+    @include lg {
+      > *{
+        width: calc(50% - .5rem);
+        margin-right: 1rem;
+        margin-top: 1rem;
+        &:nth-child(even){
+          margin-right: 0;
+        }
+        &:nth-child(1), &:nth-child(2){
+          margin-top: 0;
+        }
+      }
+    }
+
+    @include md {
+      > *{
+        width: 100%;
+        margin-right: 0;
+        margin-top: 1rem;
+
+        &:nth-child(1){
+          margin-top: 0;
+        }
+        &:nth-child(2){
+          margin-top: 1rem;
+        }
+      }
+    }
+
+  }
+
+  
 }

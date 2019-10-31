@@ -1,5 +1,4 @@
 import React from "react"
-// import { Helmet } from "react-helmet"
 
 import HeroHdr from "../components/herohdr/herohdr"
 import AlanImg from "../components/imageComponents/alan"
@@ -7,6 +6,7 @@ import VespaImg from "../components/imageComponents/vespaTopView"
 import SkillDescript from "../components/skillDescript/skillDescript"
 import NavBar from "../components/navBar/navBar"
 import OverlapColumn from "../components/overlapColumn/overlapColumn"
+import OverlapRow from "../components/overlapRow/overlapRow"
 import Button from "../components/button/button"
 
 import OilCan from '../components/icons/oilCan/oilCan'
@@ -28,7 +28,6 @@ const IndexPage = () => (
 
     <section id="about" className="bodySection twoCol">
       <AlanImg />
-
       <OverlapColumn title="ABOUT" titleAlignment="left">
         <p>
           Alan is a red seal certified automotive and power sports tech who has been working on motorcycles and scooters for the past seven years. 
@@ -36,21 +35,18 @@ const IndexPage = () => (
           His speciality is all things vintage.
         </p>
       </OverlapColumn>
-
     </section>
 
 
-    <section id="services" className="bodySection fullWidth orange">
+    <OverlapRow id="services" title="SERVICES" titleAlignment="left">
       <div>
-        {/* <h2>SERVICES</h2> */}
 
-        <div className="skillsSection">
+        <div className="skillsSection fourCol spacing" style={{paddingTop: `4vw`}}>
           <SkillDescript title="Maintenance">
             <OilCan />
             <p>From oil changes to engine rebuilds, and anything in between. We've got you covered.</p>
           </SkillDescript>
 
-          {/* <SkillDescript title="Purchase Inspections"> */}
           <SkillDescript title="Inspections">
             <MagnifyingGlass />
             <p>Looking at buying your first bike, and not sure what you're looking for? Let us help you determine if the bike you're looking at is right for you.</p>
@@ -68,9 +64,7 @@ const IndexPage = () => (
         </div>
         
       </div>
-        
-    </section>
-
+    </OverlapRow>
 
     <section id="contact" className="bodySection twoCol">
       <OverlapColumn title="CONTACT" titleAlignment="right">
@@ -107,9 +101,9 @@ const IndexPage = () => (
 
     </section>
 
-    <section id="services" className="bodySection fullWidth">
-      <div>
-        <h4>Hours of Operation</h4>
+    <section className="bodySection twoCol">
+      <div className="bodyColumn">
+        <h2>Hours of Operation</h2>
           <table>
             <tbody>
               <tr><td>Sunday</td><td>Closed</td></tr>
@@ -121,6 +115,10 @@ const IndexPage = () => (
               <tr><td>Saturday</td><td>10:00 - 6:00</td></tr>
             </tbody>
           </table>
+      </div>
+
+      <div className="bodyColumn">
+        <h2>Location</h2>
       </div>
         
 

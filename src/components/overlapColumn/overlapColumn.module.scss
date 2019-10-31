@@ -2,7 +2,7 @@
 
 .columnContainer{
     position: relative;
-    padding: 15vw 4rem 4rem 4rem;
+    padding: 13vw 4rem 4rem 4rem;
 }
 
 .overlapHeader{
@@ -15,9 +15,21 @@
     z-index: 2;
 
     &.left{
-        left: -5.5vw;
+        left: -5.25vw;
     }
     &.right{
-        right: -5.5vw;
+        right: -5.25vw;
+    }
+
+    @include md {
+        position: relative;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        width: auto;
+        margin-bottom: 1rem;
+        &.left{
+            left: 0;
+        }
     }
 }

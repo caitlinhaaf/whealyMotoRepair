@@ -9,4 +9,36 @@
 
 .dot{
     fill: white;
+    animation: bounce 2.5s infinite;
+}
+
+.dot2{
+    animation-delay: .25s;
+}
+.dot3{
+    animation-delay: .5s;
+}
+.dot4{
+    animation-delay: .75s;
+}
+.dot5{
+    animation-delay: 1s;
+}
+.dot6{
+    animation-delay: 1.25s;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(-5%);
+    }
+    20%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
