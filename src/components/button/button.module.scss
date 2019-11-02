@@ -3,6 +3,7 @@
 .default{
     position: relative;
     padding: 1rem 2rem;
+
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -10,7 +11,7 @@
 
     margin: 1rem auto;
     border: none;
-    min-width: 250px;
+    width: 20rem;
     cursor: pointer;
 
     > *{

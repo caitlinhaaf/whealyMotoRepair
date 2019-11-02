@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#ed1c24`,
         display: `minimal-ui`,
-        icon: `src/images/whealy-logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/whealyRepairLogo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

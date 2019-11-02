@@ -32,7 +32,7 @@ const IndexPage = () => (
         <p>
           Alan is a red seal certified automotive and power sports tech who has been working on motorcycles and scooters for the past seven years. 
           <br/>
-          His speciality is all things vintage.
+          Alan specialized in all things vintage.
         </p>
       </OverlapColumn>
     </section>
@@ -49,17 +49,17 @@ const IndexPage = () => (
 
           <SkillDescript title="Inspections">
             <MagnifyingGlass />
-            <p>Looking at buying your first bike, and not sure what you're looking for? Let us help you determine if the bike you're looking at is right for you.</p>
+            <p>Not sure what to look for when purchasing a second hand vehicle? Bring in an expert to make sure you're making a sound purchase.</p>
           </SkillDescript>
 
           <SkillDescript title="Consulting">
             <SpeechBubbles />
-            <p>Are you hoping to rebuild your own bike, but aren't sure where to start? Run into an issue with your project you can't troubleshoot yourself?</p>
+            <p>Looking for help with your rebuild? Is your passion project languishing in the garage? We're here to help.</p>
           </SkillDescript>
 
           <SkillDescript title="Parts Purchasing">
             <SparkPlug />
-            <p>We are Toronto's only provider of SIP parts. Contact us to place an order.</p>
+            <p>We are Toronto's only provider of <a href="https://www.sip-scootershop.com/en/main/base/home.aspx" target="_blank" rel="noopener noreferrer">S.I.P. Scootershop parts</a>. Contact us to place an order.</p>
           </SkillDescript>
         </div>
         
@@ -74,27 +74,16 @@ const IndexPage = () => (
           If you are looking to book a service appointment, please include the model and year of your vehicle, and a description of the issue or modification you would like to address. Please allow 24 hours for a response.
         </p>
 
-        <a 
-          href="https://www.instagram.com/whealymotorcyclerepair/"
-          target="_blank"
-          rel="noopener noreferrer">
-          <Button btnStyle="solid">
-            <EnvelopeIcon /> 
-            <span>Send Email</span>
-          </Button>
-        </a>
+        <Button btnStyle="solid" link="https://www.instagram.com/whealymotorcyclerepair/">
+          <EnvelopeIcon /> 
+          <span>Send Email</span>
+        </Button>
 
-        <a 
-          href="https://www.instagram.com/whealymotorcyclerepair/"
-          target="_blank"
-          rel="noopener noreferrer">
-          <Button btnStyle="outline">
-            <InstagramIcon fill="#ed1c24"/> 
-            <span>Follow Instagram</span>
-          </Button>
-        </a>
+        <Button btnStyle="outline" link="https://www.instagram.com/whealymotorcyclerepair/">
+          <InstagramIcon fill="#ed1c24"/> 
+          <span>Follow Instagram</span>
+        </Button>
       
-
       </OverlapColumn>
 
       <VespaImg />
