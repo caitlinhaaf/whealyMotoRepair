@@ -29,6 +29,13 @@ module.exports = {
         icon: `src/images/whealyRepairLogo.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-source-googlemaps-geocoding',
+      options: {
+        key: process.env.GATSBY_WHEALY_MAPS_API_KEY,
+        address: `Boston, MA`
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
