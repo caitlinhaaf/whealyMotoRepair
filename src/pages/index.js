@@ -8,7 +8,7 @@ import NavBar from "../components/navBar/navBar"
 import OverlapColumn from "../components/overlapColumn/overlapColumn"
 import OverlapRow from "../components/overlapRow/overlapRow"
 import Button from "../components/button/button"
-import GoogleMap from "../components/map"
+import GoogleMap from "../components/map/map"
 
 import OilCan from '../components/icons/oilCan/oilCan'
 import MagnifyingGlass from '../components/icons/magnifyingGlass/magnifyingGlass'
@@ -112,7 +112,6 @@ const IndexPage = () => {
         <div className="bodyColumn">
           <h2>Location</h2>
           <GoogleMap/>
-
         </div>
           
 

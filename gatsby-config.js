@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Whealy Motorcycle Repair`,
@@ -33,11 +37,8 @@ module.exports = {
       resolve: 'gatsby-source-googlemaps-geocoding',
       options: {
         key: process.env.GATSBY_WHEALY_MAPS_API_KEY,
-        address: `Boston, MA`
+        address: `1224 Dupont Street, Toronto, ON, Canada`
       }
-    }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    },
   ],
 }

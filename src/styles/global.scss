@@ -41,12 +41,14 @@ table{
   border-collapse: collapse;
   margin-top: 1rem;
 }
-
 td{
   padding: .5rem 1rem;
   min-width: 200px;
   border-bottom: 1px solid $orange;
   border-top: 1px solid $orange;
+  &:last-child{
+    text-align: right;
+  }
 }
 
 
