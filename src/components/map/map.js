@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker} from 'google-maps-react';
 import mapStyles from './mapStyles'
 
 const GoogleMap = ({...props}) => {
@@ -28,15 +28,20 @@ const GoogleMap = ({...props}) => {
     return(
         <>
             <span style={{display: `block`, marginBottom: `.5rem`}}>
-                {mapData.allLocationData.edges[0].node.results[0].formatted_address}
+                <a 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={`http://www.google.com/maps/place/${mapObj.lat},${mapObj.lng}`}>
+                    {mapData.allLocationData.edges[0].node.results[0].formatted_address}
+                </a>
             </span>
             <div style={{position: `relative`, width: `100%`, height: `100%`}}>
                 <Map
                 google={props.google}
-                zoom={16}
+                zoom={15}
                 mapTypeControl={false}
                 streetViewControl={false}
-                style={{width: `100%`, height: `100%`, minHeight: `300px`}}
+                style={{width: `100%`, height: `100%`, minHeight: `250px`}}
                 styles={mapStyles}
                 initialCenter={{ lat: mapObj.lat, lng: mapObj.lng }}
                 >

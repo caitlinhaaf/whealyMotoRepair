@@ -5,8 +5,9 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Whealy Motorcycle Repair`,
-    description: `Motorcycle technician located in Toronto specializing in vintage, scooters.`,
+    description: `Alan Whealy is a red seal certified motorcycle technician located in Toronto specializing in vintage bikes and scooters.`,
     keywords: `alan whealy, motorcycle, scooter, vespa, repair, rebuild, restoration, toronto, vintage`,
+    ogImage: `imgs/whealyMotoOpenGraph.jpg`, // Path to your image you placed in the 'static' folder
     author: `@caitlinhaaf`,
   },
   plugins: [
