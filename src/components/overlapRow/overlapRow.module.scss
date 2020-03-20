@@ -1,6 +1,7 @@
+@import "../../styles/_variables";
+
 .rowContainer{
     position: relative;
-    // padding: 15vw 4rem 4rem 4rem;
     padding-top: 13vw;
     margin-top: 8vw;
 }
@@ -13,10 +14,20 @@
     z-index: 2;
     top: -4vw;
 
+
     &.left{
-        left: 3rem;
+        left: 2rem;
     }
     &.right{
-        right: 3rem;
+        right: 2rem;
+    }
+
+    @include md {
+        &.left{
+            top: 1rem;
+        }
+        &.right{
+            top: 1rem;
+        }
     }
 }

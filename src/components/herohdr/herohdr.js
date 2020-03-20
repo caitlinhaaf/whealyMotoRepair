@@ -9,6 +9,7 @@ const Header = () => (
   <header className={componentStyles.header}>
     <div className={componentStyles.logo}>
       <LogoSVG />
+      <h1 style={{height: `0px`, overflow: `hidden`}}>Whealy Motorcycle Repair</h1>
     </div>
   </header>
 )

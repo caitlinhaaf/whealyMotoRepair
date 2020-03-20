@@ -2,7 +2,7 @@ import React from "react"
 
 import HeroHdr from "../components/herohdr/herohdr"
 import AlanImg from "../components/imageComponents/alan"
-import VespaImg from "../components/imageComponents/vespaTopView"
+import VespaImg from "../components/imageComponents/benelliTopView"
 import SkillDescript from "../components/skillDescript/skillDescript"
 import NavBar from "../components/navBar/navBar"
 import OverlapColumn from "../components/overlapColumn/overlapColumn"
@@ -33,9 +33,9 @@ const IndexPage = () => {
         <AlanImg />
         <OverlapColumn title="ABOUT" titleAlignment="left">
           <p>
-            Alan is a red seal certified automotive and power sports tech who has been working on motorcycles and scooters for the past seven years. 
-            <br/>
-            Alan specialized in all things vintage.
+            Alan Whealy is a red seal certified automotive and power sports tech who has been working as a mechanic for over a decade. He has worked on everything from vintage Italian cars, to modern motorcylces, to classic Vespas. 
+            <br/><br/>
+            Alan specializes in all things vintage. He loves breathing new life into older bikes, and 
           </p>
         </OverlapColumn>
       </section>
@@ -69,25 +69,28 @@ const IndexPage = () => {
         </div>
       </OverlapRow>
 
-      <section id="contact" className="bodySection twoCol">
-        <OverlapColumn title="CONTACT" titleAlignment="right">
+      <section id="contact" className="bodySection threeCol">
+
+        <div className="colspan-two">
+          <OverlapColumn title="CONTACT" titleAlignment="left">
           <p style={{marginBottom: `2rem`}}>
             Work is done by appointment only - we are not accepting drop-ins at this time. 
             <br/><br/>
             If you are looking to book a service appointment, please include the model and year of your vehicle, and a description of the issue or modification you would like to address. Please allow 24 hours for a response.
           </p>
 
-          <Button btnStyle="solid" link="https://www.instagram.com/whealymotorcyclerepair/">
+          <Button btnStyle="outline" link="https://www.instagram.com/whealymotorcyclerepair/">
             <EnvelopeIcon /> 
-            <span>Send Email</span>
+            <span>Send An Email</span>
           </Button>
 
           <Button btnStyle="outline" link="https://www.instagram.com/whealymotorcyclerepair/">
-            <InstagramIcon fill="#ed1c24"/> 
-            <span>Follow Instagram</span>
+            <InstagramIcon /> 
+            <span>Follow On Instagram</span>
           </Button>
         
         </OverlapColumn>
+        </div>
 
         <VespaImg />
 
@@ -95,7 +98,7 @@ const IndexPage = () => {
 
       <section className="bodySection twoCol">
         <div className="bodyColumn">
-          <h2>Hours of Operation</h2>
+          <h2>Hours of Operation <span style={{fontSize: `1.2rem`, fontWeight: `400`}}>Summer 2020</span></h2>
             <table>
               <tbody>
                 <tr><td>Sunday</td><td>Closed</td></tr>
@@ -113,16 +116,12 @@ const IndexPage = () => {
           <h2>Location</h2>
           <GoogleMap/>
         </div>
-          
 
       </section>
-
 
       <footer>
         All content copyright Whealy Motorcycle Repair {new Date().getFullYear()}.
       </footer>
-
-
     </>
   )
 }

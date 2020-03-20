@@ -1,0 +1,12 @@
+@import "../../styles/_variables";
+
+
+.mapContainer{
+    @include sm {
+        height: 300px;
+    }
+}
+.link{
+    display: block;
+    margin-bottom: .5rem;
+}

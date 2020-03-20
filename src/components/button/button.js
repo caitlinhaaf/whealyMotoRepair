@@ -4,7 +4,6 @@ import componentStyles from "./button.module.scss"
 
 const Button = ({btnStyle, link, clickEvt, ...props}) => {
     const buttonClass = (btnStyle==="outline") ? componentStyles.outline : componentStyles.solid;
-
     return(
         <>
             {(link) ? (

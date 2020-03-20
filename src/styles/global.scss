@@ -4,6 +4,9 @@
 /*
 GLOBAL STYLES
 */
+:root{
+  font-size: 18px;
+}
 *,
 body{
   box-sizing: border-box;
@@ -39,7 +42,8 @@ footer{
 
 table{
   border-collapse: collapse;
-  margin-top: 1rem;
+  margin: 1rem 0;
+  width: 100%;
 }
 td{
   padding: .5rem 1rem;
@@ -48,6 +52,10 @@ td{
   border-top: 1px solid $orange;
   &:last-child{
     text-align: right;
+  }
+
+  @include md {
+    min-width: 50px;
   }
 }
 
@@ -67,6 +75,10 @@ td{
 
   &.fullWidth{
     padding: 3rem;
+
+    @include md {
+      padding: 4rem 2rem 2rem 2rem;
+    }
   }
 
   &.light{
@@ -81,10 +93,19 @@ td{
 
 .bodyColumn{
   padding: 3rem;
+  @include md {
+    padding: 1rem 2rem;
+  }
+}
+
+.twoCol,
+.threeCol,
+.fourCol{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .twoCol{
-  display: flex;
   > *{
     width: 50%;
   }
@@ -100,10 +121,18 @@ td{
   }
 }
 
-.fourCol{
-  display: flex;
-  flex-wrap: wrap;
+.threeCol{
+  > *{
+    width: 33%;
 
+    &.colspan-two{
+      width: 66%;
+    }
+  }
+
+}
+
+.fourCol{
   > *{
     width: 25%;
   }

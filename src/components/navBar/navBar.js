@@ -11,11 +11,9 @@ class NavBar extends React.Component {
             logoVisible: false
         }
     }
-    
-    componentDidMount() {
+    componentDidMount(){
         window.addEventListener('scroll', this.handleScroll, true);
-      }
-
+    }
     handleScroll = () => {
         const scrollPos = window.scrollY;
         const windowHeight = window.innerHeight - 50;
@@ -25,9 +23,7 @@ class NavBar extends React.Component {
     }
 
     render(){
-
         let classes = (this.state.logoVisible) ? `${componentStyles.logo} ${componentStyles.visible}` : `${componentStyles.logo}`;
-
         return(
             <nav className={componentStyles.navBar}>
 

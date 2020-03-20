@@ -28,7 +28,6 @@
     }
 
     a{
-        // padding: 1rem .5rem;
         padding: 1.25rem .5rem;
         border-bottom: 2px solid black;
     }
@@ -42,6 +41,11 @@
         color: white;
         border-bottom: 2px solid white;
     }
+
+    @include sm {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .logo{
@@ -53,6 +57,9 @@
     > *{
         display: block; 
         width: 100%;
+    }
+    @include sm {
+        display: none;
     }
 }
 

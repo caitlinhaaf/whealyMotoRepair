@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Map, GoogleApiWrapper, Marker} from 'google-maps-react';
 import mapStyles from './mapStyles'
+import componentStyles from './map.module.scss'
 
 const GoogleMap = ({...props}) => {
     const mapData = useStaticQuery(graphql`
@@ -26,8 +27,8 @@ const GoogleMap = ({...props}) => {
     const mapObj = mapData.allLocationData.edges[0].node.results[0].geometry.location
 
     return(
-        <>
-            <span style={{display: `block`, marginBottom: `.5rem`}}>
+        <div class={componentStyles.mapContainer}>
+            <span class={componentStyles.link}>
                 <a 
                     target="_blank"
                     rel="noopener noreferrer"
@@ -48,8 +49,7 @@ const GoogleMap = ({...props}) => {
                     <Marker position={{ lat: mapObj.lat, lng: mapObj.lng }} />
                 </Map>
             </div>
-        </>
-        
+        </div>
     )
 }
 

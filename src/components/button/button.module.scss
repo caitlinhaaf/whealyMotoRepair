@@ -3,12 +3,14 @@
 .default{
     position: relative;
     padding: 1rem 2rem;
-
     display: flex;
     justify-content: center;
     align-items: stretch;
     text-decoration: none;
+    max-width: 100%;
 
+    font: $hdrFont;
+    font-size: 1.2rem;
     margin: 1rem auto;
     border: none;
     width: 20rem;
@@ -18,11 +20,12 @@
         display: block;
     }
     svg{
-        min-width: 1.25rem;
+        width: 1.5rem;
         margin-right: .5rem;
     }
     *{
         text-decoration: none;
+        text-transform: uppercase;
     }
 }
 
@@ -31,7 +34,6 @@
     &:hover, &:focus{
         background-color: darken($orange, 15%)
     }
-
 }
 
 .outline{
@@ -41,6 +43,9 @@
     *{
         color: $orange;
         z-index: 2;
+    }
+    svg, svg *{
+        fill: $orange;
     }
     &::after{
         content: '';
@@ -57,6 +62,9 @@
     &:hover, &:focus{
         *{
             color: white;
+        }
+        svg, svg *{
+            fill: white;
         }
         &::after{
             width: 100%;
