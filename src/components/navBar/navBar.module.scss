@@ -40,6 +40,9 @@
         outline: none;
         color: white;
         border-bottom: 2px solid white;
+        border-right: 0px;
+        border-top: 0px;
+        border-left: 0px;
     }
 
     @include sm {

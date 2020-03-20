@@ -15,14 +15,15 @@
     
     color: $orange;
     font-size: 8vw;
-    border-bottom: 1px solid $orange;
+    border-bottom: 3px solid $orange;
     z-index: 2;
 
     &.left{
-        left: -5.25vw;
+        // left: -5.25vw;
+        left: -4.5vw;
     }
     &.right{
-        right: -5.25vw;
+        // right: -5.25vw;
     }
 
     @include md {

@@ -2,7 +2,7 @@
 
 
 .mapContainer{
-    @include sm {
+    @include md {
         height: 300px;
     }
 }

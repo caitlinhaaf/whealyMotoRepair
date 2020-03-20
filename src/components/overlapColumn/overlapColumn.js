@@ -7,9 +7,9 @@ const OverlapColumn = ({title, titleAlignment, ...props}) => {
 
     return(
         <div className={componentStyles.columnContainer}> 
-            <h4 className={`${componentStyles.overlapHeader} ${titleAlignmentClass}`}>
+            <h2 className={`${componentStyles.overlapHeader} ${titleAlignmentClass}`}>
                 {title}
-            </h4>
+            </h2>
             {props.children}
         </div>
     )

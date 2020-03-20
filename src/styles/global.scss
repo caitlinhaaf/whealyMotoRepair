@@ -26,12 +26,14 @@ h1, h2, h3, h4{
 }
 
 a{
-  cursor: pointer;
-  // text-decoration: none;
   font-weight: bold;
 }
-a:focus{
+a:focus, a:hover{
   color: $orange;
+  outline: 0;
+}
+a:focus{
+  border: 2px solid $orange;
 }
 
 footer{
@@ -130,6 +132,23 @@ td{
     }
   }
 
+  @include md {
+    > *,
+    .colspan-two{
+      width: 100%;
+      margin-right: 0;
+      margin-top: 1rem;
+
+      &:nth-child(1){
+        margin-top: 0;
+      }
+      &:nth-child(2),
+      &:nth-child(3){
+        margin-top: 1rem;
+      }
+    }
+  }
+
 }
 
 .fourCol{
@@ -174,8 +193,11 @@ td{
         }
       }
     }
-
   }
+}
 
-  
+.sectionAnchor{
+  visibility: hidden;
+  position: absolute;
+  top: -6rem;
 }

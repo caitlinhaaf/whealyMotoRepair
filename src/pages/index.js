@@ -29,20 +29,23 @@ const IndexPage = () => {
 
       <HeroHdr/>
 
-      <section id="about" className="bodySection twoCol">
+      <section className="bodySection twoCol">
+        {/* eslint-disable-next-line */}
+        <a id="about" href="" tabIndex="-1" className="sectionAnchor"></a>
         <AlanImg />
         <OverlapColumn title="ABOUT" titleAlignment="left">
           <p>
             Alan Whealy is a red seal certified automotive and power sports tech who has been working as a mechanic for over a decade. He has worked on everything from vintage Italian cars, to modern motorcylces, to classic Vespas. 
             <br/><br/>
-            Alan specializes in all things vintage. He loves breathing new life into older bikes, and 
+            Alan specializes in all things vintage. He loves breathing new life into older bikes and contributing to each bike's story.
           </p>
         </OverlapColumn>
       </section>
 
-
-      <OverlapRow id="services" title="SERVICES" titleAlignment="left">
-        <div>
+      <OverlapRow title="SERVICES">
+        {/* eslint-disable-next-line */}
+        <a id="services" href="" tabIndex="-1" className="sectionAnchor"></a>
+        <>
 
           <div className="skillsSection fourCol spacing" style={{paddingTop: `4vw`}}>
             <SkillDescript title="Maintenance">
@@ -66,13 +69,14 @@ const IndexPage = () => {
             </SkillDescript>
           </div>
           
-        </div>
+        </>
       </OverlapRow>
 
-      <section id="contact" className="bodySection threeCol">
-
+      <section id="" className="bodySection threeCol">
+        {/* eslint-disable-next-line */}
+        <a id="contact" href="" tabIndex="-1" className="sectionAnchor"></a>
         <div className="colspan-two">
-          <OverlapColumn title="CONTACT" titleAlignment="left">
+          <OverlapColumn title="CONTACT" titleAlignment="right" >
           <p style={{marginBottom: `2rem`}}>
             Work is done by appointment only - we are not accepting drop-ins at this time. 
             <br/><br/>
